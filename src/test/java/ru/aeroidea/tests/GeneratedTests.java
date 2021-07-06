@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -13,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class GeneratedTests extends TestBase {
     @Test
-    @DisplayName("Проверка надписи на сайте")
+    @DisplayName("Проверка надписи на главной странице")
     void generatedTest() {
         step("Открыть https://aeroidea.ru/", () -> {
             open("https://aeroidea.ru/");
@@ -21,6 +22,54 @@ public class GeneratedTests extends TestBase {
 
         step("Проверка что есть надпись \"Специализация на крупнейших eCommerce-проектах\"", () -> {
             $x("//div[@data-sr='data-sr' and @class='row']").shouldHave(text("Специализация на крупнейших eCommerce-проектах"));
+        });
+    }
+
+    @Test
+    @DisplayName("Проверка наличия проекта \"Shell\"")
+    void chekProjectsShell() {
+        step("Открыть https://aeroidea.ru/", () -> {
+            open("https://aeroidea.ru/");
+        });
+
+        step("Перейти в раздел 'Проекты'", () -> {
+            $x("//nav//a[contains(text(), 'Проекты')]").click();
+        });
+
+        step("Проверка наличия проекта Shell", () -> {
+            $x("//h2[contains(text(), 'Shell')]").shouldHave(visible);
+        });
+    }
+
+    @Test
+    @DisplayName("Проверка наличия проекта \"Gloria Jeans\"")
+    void chekProjectsGloriaJeans() {
+        step("Открыть https://aeroidea.ru/", () -> {
+            open("https://aeroidea.ru/");
+        });
+
+        step("Перейти в раздел 'Проекты'", () -> {
+            $x("//nav//a[contains(text(), 'Проекты')]").click();
+        });
+
+        step("Проверка наличия проекта Gloria Jeans", () -> {
+            $x("//h2[contains(text(), 'Gloria Jeans')]").shouldHave(visible);
+        });
+    }
+
+    @Test
+    @DisplayName("Проверка наличия услуги \"Дорожная карта\"")
+    void chekServices() {
+        step("Открыть https://aeroidea.ru/", () -> {
+            open("https://aeroidea.ru/");
+        });
+
+        step("Перейти в раздел \"Услуги\"", () -> {
+            $x("//nav//a[contains(text(), 'Услуги')]").click();
+        });
+
+        step("Проверка наличия услуги \"Дорожная карта\"", () -> {
+            $x("//h3[contains(text(), 'Дорожная карта')]").shouldHave(visible);
         });
     }
 
