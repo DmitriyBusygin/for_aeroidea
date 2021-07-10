@@ -18,10 +18,9 @@
 |:---------:|:--------:|
 | <img src="forReadme/Allure.svg" width="40" height="40"> | <img src="forReadme/Telegram.svg" width="40" height="40"> |
 
-# USAGE examples
+## Запуск через Jenkins https://jenkins.autotests.cloud/view/QA.GURU%20students/job/c06-dbusygin91-forCompany/
 
-### For run remote tests need fill remote.properties or to pass value:
-
+### С какими параметрами можно запустить тесты:
 * browser (default chrome)
 * browserVersion (default 89.0)
 * browserSize (default 1920x1080)
@@ -30,30 +29,26 @@
 * videoStorage (url address where you should get video)
 * threads (number of threads)
 
+### Пример странички с выбором параметров сборки
+![alt "Выбор параметров"](./forReadme/Screenshot_1.png)
 
-Run tests with filled remote.properties:
+### Как запустить тесты из командной строки
+Запустить тесты с дефолтными параметрами:
 ```bash
 gradle clean test
 ```
 
-Run tests with not filled remote.properties:
+Запустить тесты с нужными нам параметрами:
 ```bash
 gradle clean -DremoteDriverUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
 
-Serve report:
+Сформировать отчет в Allure:
 ```bash
 allure serve build/allure-results
 ```
 
+## Прогоняются тесты в Selenoid https://selenoid.autotests.cloud/#/
 
-For further development there are some example tests in src/test/java/cloud.autotests/tests/demowebshop
-* remove @Disabled("...") annotation to run tests
-```bash
-gradle clean demowebshop
-```
-
-:heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
-:blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
-
-
+### Пример прогона теста в Selenoid
+![alt "Video from Selenoid"](./forReadme/video.mp4 "Video from Selenoid")
