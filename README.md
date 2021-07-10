@@ -5,18 +5,18 @@
 
 | Java | Gradle | Junit5 | Selenide |
 |:----:|:------:|:------:|:--------:|
-| <img src="forReadme/JAVA.svg" width="40" height="40"> | <img src="forReadme/Gradle.svg" width="40" height="40"> | <img src="images/Junit5.svg" width="40" height="40"> | <img src="images/Selenide.svg" width="40" height="40"> |
+| <img src="forReadme/JAVA.svg" width="40" height="40"> | <img src="forReadme/Gradle.svg" width="40" height="40"> | <img src="forReadme/Junit5.svg" width="40" height="40"> | <img src="forReadme/Selenide.svg" width="40" height="40"> |
 
 Запускаются и прогоняются через Jenkins + Selenoid
 
 | Jenkins | Selenoid | 
 |:--------:|:-------------:|
-| <img src="images/Jenkins.svg" width="40" height="40"> | <img src="images/Selenoid.svg" width="40" height="40"> | 
+| <img src="forReadme/Jenkins.svg" width="40" height="40"> | <img src="forReadme/Selenoid.svg" width="40" height="40"> | 
 
 С отчетами в Allure + Telegram
 | Allure Report | Telegram |
 |:---------:|:--------:|
-| <img src="images/Allure Report.svg" width="40" height="40"> | <img src="images/Telegram.svg" width="40" height="40"> |
+| <img src="forReadme/Allure.svg" width="40" height="40"> | <img src="forReadme/Telegram.svg" width="40" height="40"> |
 
 # USAGE examples
 
