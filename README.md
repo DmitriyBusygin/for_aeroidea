@@ -51,4 +51,10 @@ allure serve build/allure-results
 ## Прогоняются тесты в Selenoid https://selenoid.autotests.cloud/#/
 
 ### Пример прогона теста в Selenoid
-![alt "Video from Selenoid"](./forReadme/video.mp4 "Video from Selenoid")
+![alt "Video from Selenoid"](./forReadme/video.gif "Video from Selenoid")
+
+## После прогона формируется отчет в Allure
+![alt "Отчет пример"](./forReadme/Screenshot_2.png)
+
+## В Telegram отправляется уведомление с результатами
+![alt "Оповещение в telegram"](./forReadme/Screenshot_3.png)
