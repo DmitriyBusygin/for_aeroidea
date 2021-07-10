@@ -1,3 +1,22 @@
+# Автотесты на проверку наличия информации о компании  [**aeroidea.ru**](https://aeroidea.ru)
+
+## Стек и инструменты
+Тесты были написаны на Java + JUnit5 + Selenide + Gradle
+
+| Java | Gradle | Junit5 | Selenide |
+|:----:|:------:|:------:|:--------:|
+| <img src="forReadme/JAVA.svg" width="40" height="40"> | <img src="forReadme/Gradle.svg" width="40" height="40"> | <img src="images/Junit5.svg" width="40" height="40"> | <img src="images/Selenide.svg" width="40" height="40"> |
+
+Запускаются и прогоняются через Jenkins + Selenoid
+
+| Jenkins | Selenoid | 
+|:--------:|:-------------:|
+| <img src="images/Jenkins.svg" width="40" height="40"> | <img src="images/Selenoid.svg" width="40" height="40"> | 
+
+С отчетами в Allure + Telegram
+| Allure Report | Telegram |
+|:---------:|:--------:|
+| <img src="images/Allure Report.svg" width="40" height="40"> | <img src="images/Telegram.svg" width="40" height="40"> |
 
 # USAGE examples
 
